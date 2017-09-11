@@ -1,0 +1,7 @@
+The line to assign the number variable as an input is commented, so it does nothing.
+It assigns 12 to the variable number, and 2 to i.
+It then enters a while loop.
+As long as i is less than number, it takes the modulo, or remainder, of the number and i.
+If this remainder is 0, it prints whatever i is.
+It then adds 1 to i, and loops until the condition of i less than number is false.
+This code would print 5, 7, 8 , 9, 10, and 11.
