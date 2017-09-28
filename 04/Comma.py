@@ -10,8 +10,7 @@ def comma(lyst):
             statement+=i+", and "
         else:
             statement+=i+", "
-    print(statement)
     return statement
 
-comma(coms)
-comma(other)
+print(comma(coms))
+print(comma(other))
