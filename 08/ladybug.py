@@ -12,8 +12,7 @@ def buglist(b):
             if freq(bug,board)<=1:
                 return("NO")
     if "_" not in board:
-        x=happy(board)
-        if x==True:
+        if happy(board):
             return("NO")
     return("YES")
 
