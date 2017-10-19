@@ -19,11 +19,10 @@ def buglist(b):
 
 def happy(bugs):
     for i, bug in enumerate(bugs):
-        try:
-            if bug!=bugs[i+1] and bug!=bugs[i-1]:
-                return(1)
-        except:
-            pass
+        if i == 0 or i == len(bugs)-1:
+            continue
+        if bug!=bugs[i+1] and bug!=bugs[i-1]:
+            return(1)
 
 
 games=open("bugsimport").read().splitlines()
