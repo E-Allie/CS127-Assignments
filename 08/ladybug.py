@@ -13,21 +13,21 @@ def buglist(b):
                 return("NO")
     if "_" not in board:
         x=happy(board)
-        if x==1:
+        if x==True:
             return("NO")
     return("YES")
 
 def happy(bugs):
     if len(bugs)==2:
         if bugs[0]!=bugs[1]:
-            return(1)
+            return True
         else:
-            return
+            return False
     for i, bug in enumerate(bugs):
         if i == 0 or i == len(bugs)-1:
             continue
         if bug!=bugs[i+1] and bug!=bugs[i-1]:
-            return(1)
+            return True
 
 
 games=open("bugsimport").read().splitlines()
