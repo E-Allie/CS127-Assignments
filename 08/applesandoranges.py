@@ -9,7 +9,7 @@ def trees(hstart,hend,atree,btree,apples,bapples,dapp,dbapp):
         if hstart<=btree+dbapp[i]<=hend:
             hbapp+=1
     return(str(happ)+"\n"+str(hbapp))
-           
+
 
 fruits=open("fruitsimport").read().splitlines()
 s,t=fruits[0].split(" ")

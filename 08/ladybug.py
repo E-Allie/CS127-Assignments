@@ -18,6 +18,11 @@ def buglist(b):
     return("YES")
 
 def happy(bugs):
+    if len(bugs)==2:
+        if bugs[0]!=bugs[1]:
+            return(1)
+        else:
+            return
     for i, bug in enumerate(bugs):
         if i == 0 or i == len(bugs)-1:
             continue
