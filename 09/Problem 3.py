@@ -9,4 +9,4 @@ def scrabble(s):
 
 print(scrabble("hello"))
 print(scrabble("What"))
-print(scrabble("ArGuE"))
+print(scrabble("words"))
