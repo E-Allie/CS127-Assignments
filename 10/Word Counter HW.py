@@ -23,6 +23,9 @@ def build_word_sequence(f):
         d.setdefault(w,[])
         if i<len(tl)-1:
             d[w].append(tl[i+1])
+    #Remove if not for human consumption.
+    for w in d:
+        d[w].sort()
     return d
 
 d=build_word_sequence("hamlet.txt")
