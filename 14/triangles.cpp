@@ -5,8 +5,12 @@ using std::endl;
 using std::string;
 
 string line(int l, std::string c){
-
-  return "";
+  string line;
+  while(l>0){
+    line+=c;
+    l--;
+  }
+  return line;
 }
 
 string rect(int w, int h) {
@@ -64,7 +68,8 @@ string tri3(int h) {
 
 int main(){
   string s="hello";
-  cout<<rect(8,4)<<endl<<endl<<
+  cout<<line(5,"yes")<<endl<<endl<<
+  rect(8,4)<<endl<<endl<<
   tri1(5)<<endl<<endl<<
   tri2(5)<<endl<<endl<<
   tri3(5)<<endl;
